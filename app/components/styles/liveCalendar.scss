@@ -1,0 +1,101 @@
+.dateBar {
+  height: 32px;
+  width: 100%;
+}
+.liveDate {
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  position: fixed;
+  top: 84px;
+  z-index: 5;
+  width: 100%;
+}
+.LiveCalendar table {
+  width: 100%;
+  border-spacing: 0;
+  padding-top: 32px;
+}
+.flagItem {
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-right: solid 1.5px #d8d8d8;
+    border-bottom: solid 1.5px #d8d8d8;
+  }
+  width: 20%;
+}
+.flagItem div {
+  display: flex;
+  justify-content: center;
+}
+.dataItem {
+  width: 80%;
+  border-bottom: 1px solid #d8d8d8;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #d8d8d8;
+  }
+}
+.flag {
+  width: 40px;
+  height: 25px;
+}
+.timePoint {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-top: 5px;
+}
+.important {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
+  width: 32px;
+  padding: 5px 0;
+  background-color: #d8d8d8;
+  margin: 10px 0 0 19px;
+  border-radius: 2px;
+}
+.rlContent {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 10px 0 10px 19px;
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
+}
+.rlRange {
+  height: 34px;
+  line-height: 34px;
+  background-color: rgba(46, 68, 128, 0.1);
+  padding-left: 19px;
+}
+.rlRange li {
+  display: inline-block;
+  width: 33.33%;
+}
+.rlRange cite, .rlRange span {
+  font-size: 11px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+}
+.rlRange cite {
+  margin-right: 5px;
+}
+.important3 .rlContent, .important3 .rlRange cite, .important3 .rlRange span {
+  color: #ea1919;
+}
+.important3 .important {
+  background-color: #ea1919;
+}
+.important2 .important {
+  background-color: #ff8500;
+}

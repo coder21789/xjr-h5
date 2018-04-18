@@ -1,0 +1,59 @@
+.SuggestAeraCollection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 5px;
+  padding: 15px 0;
+  position: relative;
+}
+.SuggestAeraCollection::before {
+  content: '';
+  background-color: #e5e5e5;
+  height: 1px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+}
+.SuggestAeraCollection a {
+  flex: 25%;
+  margin: 5px 5px;
+}
+.areaSubject {
+  position: relative;
+}
+.areaSubject::before {
+  content: '';
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.32));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.areaSubject img {
+  width: 100%;
+  height: 80px;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 60px 30px;
+  background-color: #e5e5e5;
+}
+.SuggestAeraCollection figure figcaption {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  z-index: 5;
+}
+.SuggestAeraCollection figure figcaption em {
+  font-size: 11px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.3px;
+  margin-left: 3px;
+}

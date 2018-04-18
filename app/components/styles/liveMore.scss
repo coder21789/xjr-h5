@@ -1,0 +1,39 @@
+.LiveMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.LiveMore h4 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.liveYesterday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liveYesterday button {
+  width: 117px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #2e4480;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}

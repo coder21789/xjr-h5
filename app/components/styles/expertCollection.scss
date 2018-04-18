@@ -1,0 +1,135 @@
+.ExpertCollection {
+  background-color: #FFFFFF;
+  margin: 0 10px 15px;
+}
+.ExpertCollection:nth-child(1) {
+  margin: 15px 10px 15px;
+}
+.ExpertCollection figure {
+  display: flex;
+  border-bottom: solid 1px #e5e5e5;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #e5e5e5;
+  }
+  padding: 10px 10px 15px;
+}
+.ExpertCollection figure > a {
+  width: 100%;
+}
+.ExpertCollection figure figcaption {
+  font-size: 14px;
+  color: #000000;
+}
+.ExpertCollection figure h4 {
+  font-size: 19px;
+  color: #2e4480;
+  font-weight: 400;
+  letter-spacing: 2.3px;
+  margin: 6px 0 10px 0;
+}
+.ExpertCollection figure p {
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1.4px;
+  line-height: 1.5em;
+}
+.expertAvatar {
+  position: relative;
+  width: 12%;
+}
+.expertAvatar img {
+  width: 35px;
+  height: 35px;
+}
+.expertAvatarBg {
+  width: 35px;
+  height: 35px;
+  background: url('../img/expert_define@3x.png') 50% 50% no-repeat;
+  background-size: 18.7px 18px;
+  background-color: #2e4480;
+}
+.expertAvatar::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: url('../img/v.png');
+  background-size: 15px 15px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 5;
+}
+.expertTop {
+  width: 95%;
+  padding-left: 5%;
+}
+.moreSubject {
+  display: flex;
+  padding: 10px;
+}
+.moreSubject h4 {
+  width: 21%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.moreSubject h4 cite a {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.75em;
+  position: relative;
+}
+.moreSubject h4 cite a::before {
+  content: '';
+  width: 1px;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    width: 1.5px;
+  }
+  height: 100%;
+  display: block;
+  background-color: #e5e5e5;
+  position: absolute;
+  z-index: 1;
+  left: 48px;
+  top: 0;
+}
+.moreSubject ul {
+  width: 79%;
+  list-style: none;
+}
+.moreSubject ul li {
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 10px;
+  max-height: 2em;
+  line-height: 2em;
+  overflow: hidden;
+}
+.moreSubject ul li a {
+  font-size: 12px;
+  color: #959595;
+}
+.moreSubject ul li::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: #d8d8d8;
+  display: block;
+  position: absolute;
+  top: 0.8em;
+  left: 0.1em;
+}
+.expertComponent {
+  .navigationBar {
+    border-bottom: 1px solid #f0f0f0!important;
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #f0f0f0!important;
+    }
+  }
+}

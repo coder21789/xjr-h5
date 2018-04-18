@@ -1,0 +1,16 @@
+{
+  "port": 3000,
+  "mysql": {
+    "api": {
+      "xinrongnews": {
+        "database": "cjhnews2",
+        "username": "xrjcs",
+        "password": "xrjcs@123",
+        "option": {
+          "host": "172.16.60.161",
+          "port": "3306"
+        }
+      }
+    }
+  }
+}

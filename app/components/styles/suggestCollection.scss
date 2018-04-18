@@ -1,0 +1,87 @@
+.suggestCollection {
+  padding: 12px 0;
+  margin-left: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #f0f0f0;
+  }
+}
+.suggestHeader {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+}
+.suggestHeader em {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 200;
+  color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 1px;
+  background-color: #479ad7;
+}
+.suggestHeader h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  flex: 1;
+  margin-left: 8px;
+}
+.suggestHeader img {
+  width: 7px;
+  height: 10px;
+}
+.suggestContent {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.suggestContent::-webkit-scrollbar {
+  display:none;
+}
+.suggestContent figure {
+  position: relative;
+  margin-right: 4px;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 90px 45px;
+  background-color: #e5e5e5;
+}
+.suggestScroller img {
+  width: 200px;
+  height: 100px;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 90px 45px;
+  background-color: #e5e5e5;
+}
+.suggestItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.suggestItem figcaption {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 150px;
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
+  position: relative;
+  white-space: normal;
+}
+.suggestItem time {
+  font-size: 11px;
+  font-weight: 300;
+  color: #FFFFFF;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}

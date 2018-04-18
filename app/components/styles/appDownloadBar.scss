@@ -1,0 +1,33 @@
+.appDownloadBar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 94%;
+  padding: 11px 3%;
+  background-color: #eff3ff;
+  z-index: 200;
+}
+.btn_delete {
+  width: 16.5px;
+  height: 16.5px;
+}
+.icon_xrj {
+  width: 45px;
+  height: 45px;
+  margin: 0 15px;
+}
+.appDownloadBar h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2e4480;
+  flex: 1;
+}
+.appDownloadBar a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 2px;
+  background-color: #2e4480;
+}

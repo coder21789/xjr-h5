@@ -1,0 +1,144 @@
+.StockRange {
+  padding: 0 10px;
+  dl {
+    background-color: #FFFFFF;
+    dt {
+      font-size: 18px;
+      font-weight: 400;
+      height: 2.5em;
+      line-height: 2.5em;
+      text-align: center;
+      width: 50%;
+      border-bottom: solid 1px #e5e5e5;
+      @media (-webkit-min-device-pixel-ratio: 3) {
+        border-bottom: solid 1.5px #e5e5e5;
+      }
+      display: inline-block;
+    }
+    .actived {
+      font-size: 18px;
+      color: #2c447d;
+      border-bottom: solid 0.08em #2c447d;
+      @media (-webkit-min-device-pixel-ratio: 3) {
+        border-bottom: solid 1.5px #2c447d;
+      }
+    }
+  }
+}
+.StockRange {
+  dd {
+    padding: 15px 20px;
+    table {
+      width: 100%;
+      thead tr {
+        th {
+          font-size: 14px;
+          font-weight: 400;
+          color: #959595;
+          width: 33.33%;
+        }
+        th:nth-child(2) {
+          text-align: center;
+        }
+        th:nth-child(3) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+.StockRange {
+  tbody {
+    tr {
+      font-size: 18px;
+      border-bottom: solid 1px #f2f2f2;
+      @media (-webkit-min-device-pixel-ratio: 3) {
+        border-bottom: solid 1.5px #f2f2f2;
+      }
+      td {
+        vertical-align: text-top;
+        padding: 10px 0;
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          display: block;
+        }
+        cite {
+          font-size: 12px;
+          color: #959595;
+          font-style: normal;
+          font-weight: 400;
+          margin-top: 3px;
+          display: block;
+        }
+      }
+      td:nth-child(2) {
+        text-align: center;
+      }
+      td:nth-child(3) {
+        display: flex;
+        justify-content: flex-end;
+        span {
+          font-size: 14px;
+          color: #FFFFFF;
+          width: 70px;
+          height: 26px;
+          line-height: 26px;
+          border-radius: 2px;
+          background-color: #ea1919;
+          text-align: center;
+        }
+      }
+    }
+    tr:nth-child(1) td:nth-child(1) div,
+    tr:nth-child(2) td:nth-child(1) div,
+    tr:nth-child(3) td:nth-child(1) div {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 40%;
+        left: -20px;
+        display: block;
+        content: '';
+        background: url('../img/1@3x.png');
+        background-size: cover;
+        width: 16px;
+        height: 14px;
+      }
+    }
+    tr:nth-child(2) td:nth-child(1) div {
+      &::before {
+        background: url('../img/2@3x.png');
+        background-size: cover;
+      }
+    }
+    tr:nth-child(3) td:nth-child(1) div {
+      &::before {
+        background: url('../img/3@3x.png');
+        background-size: cover;
+      }
+    }
+  }
+}
+.Android tbody {
+  tr:nth-child(1) td:nth-child(1) div,
+  tr:nth-child(2) td:nth-child(1) div,
+  tr:nth-child(3) td:nth-child(1) div {
+    position: relative;
+    &::before {
+      width: 18px!important;
+      height: 15px!important;
+    }
+  }
+}
+.UC tbody {
+  tr:nth-child(1) td:nth-child(1) div,
+  tr:nth-child(2) td:nth-child(1) div,
+  tr:nth-child(3) td:nth-child(1) div {
+    position: relative;
+    &::before {
+      width: 20px!important;
+      height: 18px!important;
+    }
+  }
+}

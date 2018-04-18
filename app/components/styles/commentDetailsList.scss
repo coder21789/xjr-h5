@@ -1,0 +1,45 @@
+.commentDetailsCaption {
+	height: 51px;
+  	background-color: #ffffff;
+  	margin: 0 15px;
+  	display: flex;
+  	align-items: center;
+  	position: relative;
+  	figcaption {
+  		font-size: 14px;
+  		letter-spacing: 0.3px;
+  		text-align: left;
+  		color: #2e4480;
+  		max-width: 100%;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+  		white-space: nowrap;
+  	}
+}
+.commentDetailsCaption::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -25px;
+	width: 100vw;
+	border-bottom: 1px solid #e5e5e5;
+	@media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #e5e5e5;
+    }
+}
+.commentDetailsTop {
+	position: relative;
+	margin-bottom: 20px;
+	.CommentContent {
+		border-bottom: 0;
+	}
+}
+.commentDetailsTop::after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: -10px;
+	width: 100vw;
+	height: 20px;
+	background-color: #e5e5e5;
+}

@@ -1,0 +1,100 @@
+.suggestSmaller {
+  margin: 0 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #f0f0f0;
+  }
+  display: flex;
+}
+.suggestSmallerImg {
+  width: 100px;
+  height: 75px;
+  margin-right: 8px;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 48px 24px;
+  background-color: #e5e5e5;
+}
+.suggestSmaller img {
+  width: 100px;
+  height: 75px;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 48px 24px;
+  background-color: #e5e5e5;
+}
+.suggestSmaller figure {
+  height: 75px;
+  flex: 1;
+  position: relative;
+}
+.suggestSmaller figcaption {
+  font-size: 18px;
+  font-weight: 400;
+  color: #272727;
+  line-height: 1.3em;
+  max-height: 2.6em;
+  overflow: hidden;
+}
+.sectionFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.suggestSmaller cite, .suggestSmaller time {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 400;
+  color: #959595;
+}
+.eventTag {
+  position: relative;
+  width: 64px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 1px;
+  font-size: 11px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #2e4480;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+.eventTag::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 2px solid #2e4480;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+}
+.onlyTag {
+  position: relative;
+  width: 64px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 1px;
+  font-size: 11px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #f1280d;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+.onlyTag::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 2px solid #f1280d;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+}

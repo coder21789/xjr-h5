@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.ttf') format('truetype'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-diqiu:before { content: "\e60f"; }
+
+.icon-icon-test:before { content: "\e637"; }
+
+.icon-Oval:before { content: "\e693"; }
+
+.icon-guanbi:before { content: "\e694"; }
+
+.icon-fanhuijiantou:before { content: "\e695"; }
+
+.icon-gengduo:before { content: "\e696"; }
+
+.icon-remenpinglun:before { content: "\e699"; }
+
+.icon-xiazai:before { content: "\e719"; }
+
+.icon-zan-shixin:before { content: "\e71a"; }
+
+.icon-zan-xian:before { content: "\e71b"; }
+
+.icon-pinglun:before { content: "\e71e"; }
+
+.icon-tujiicon:before { content: "\e720"; }
+
+.icon-neiyejiantou:before { content: "\e721"; }
+
+.icon-jiazai:before { content: "\e724"; }
+
+.icon-fenxiang1:before { content: "\e745"; }

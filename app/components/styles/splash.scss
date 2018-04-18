@@ -1,0 +1,38 @@
+.splash {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url('../img/ic_launcher.png') center;
+  background-size: cover;
+}
+#status {
+  display: none;
+}
+.left, .right {
+  fill: #FFF;
+  transition: all .5s;
+}
+.left {
+  d: path('M0 1 0 49 22 38.183075 22 11.8525238Z');
+}
+.right {
+  d: path('M44.096035 24.8759317 44.096035 24.8759317 22 37.6656866 22 12.2530012Z');
+}
+#status:checked + svg .left {
+  d: path('M0 1 0 49 10 49 10 1Z');
+}
+#status:checked + svg .right {
+  d: path('M35 0 35 50 25 50 25 0Z');
+}
+.SplashContainer {
+  position: relative;
+}
+.SplashContainer label {
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  top: 5vh;
+}

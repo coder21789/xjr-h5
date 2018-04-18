@@ -1,0 +1,31 @@
+.PageEnd {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	position: relative;
+	margin: 20px 0 0;
+}
+.pageEndLine {
+	width: 140px;
+	border-bottom: 1px solid #e5e5e5;
+	@media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #e5e5e5;
+    }
+}
+.pageEndMsg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	span {
+		font-size: 12px;
+  		color: #959595;
+  		background-color: #ffffff;
+  		padding: 0 5px;
+	}
+}

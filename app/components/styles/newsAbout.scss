@@ -1,0 +1,25 @@
+/*.NewsAbout {
+  margin-bottom: 68px;
+}*/
+.newsIcon {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 25px 0 5px 0;
+  border-top: 1px solid #f0f0f0;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-top: solid 1.5px #f0f0f0;
+  }
+}
+.newsIcon img {
+  width: 21px;
+  height: 14px;
+  margin-right: 6px;
+}
+.newsIcon h4 {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  color: #2d437e;
+}

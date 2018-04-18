@@ -1,0 +1,30 @@
+.slides {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  display: flex;
+  button {
+    color: #FFFFFF;
+    padding: 10px 3px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  span {
+    background-color: #e5e5e5;
+    width: 6px!important;
+    height: 6px!important;
+    background: url('../img/slide_square_define.png') no-repeat;
+    background-size: 6px 6px;
+    display: block;
+    margin: 0 2px;
+  }
+  i {
+    font-size: 7px;
+    color: #FFFFFF;
+    margin-right: 2px;
+  }
+  .num {
+    color: #2e4480;
+  }
+}

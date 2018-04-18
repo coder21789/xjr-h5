@@ -1,0 +1,48 @@
+.social-share {
+  font-family:"socialshare" !important;
+  font-size:16px;
+  font-style:normal;
+  width: 125px;
+  margin: 0 auto;
+  a {
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+    outline: none;
+  }
+  .social-share-icon {
+    position:relative;
+    display:inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 32px;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;
+    transition: background 0.6s ease-out 0s;
+    &:hover{
+      background: #666;
+      color: #fff;
+    }
+  }
+  .icon-weibo, .icon-weibo:hover {
+    width: 40px;
+    height: 40px;
+    background: url('../img/wb@3x.png') no-repeat;
+    background-size: 40px 40px;
+  }
+  .icon-tencent, .icon-tencent:hover {
+    width: 40px;
+    height: 40px;
+    background: url('../img/qqwb@3x.png') no-repeat;
+    background-size: 40px 40px;
+  }
+  .icon-qzone, .icon-qzone:hover {
+    width: 40px;
+    height: 40px;
+    background: url('../img/qqkj@3x.png') no-repeat;
+    background-size: 40px 40px;
+  }
+}

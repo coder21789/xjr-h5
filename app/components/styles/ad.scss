@@ -1,0 +1,254 @@
+.cooperateIntro {
+	width: 100%;
+	height: 160px;
+}
+.cooperateTypeContainer {
+	background-color: #ffffff;
+	padding: 15px 0 30px;
+	margin-top: 10px;
+	border-bottom: 1px solid #e5e5e5;
+	@media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #e5e5e5;
+    }
+}
+.cooperateType {
+	width: 90%;
+	background-color: #ffffff;
+	margin: 0 5%;
+	section {
+		margin-bottom: 20px;
+    	position: relative;
+    	display: flex;
+        justify-content: center;
+        align-items: center;
+    	figure {
+    		font-size: 0.48rem;
+		    color: #353535;
+		    text-align: center;
+		    font-weight: bold;
+		    background-color: #ffffff;
+		    z-index: 5;
+		    padding: 0 5px;
+    	}
+    	p {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		span {
+    			font-size: 18px;
+    			width: 7em;
+    			height: 1px;
+    			@media (-webkit-min-device-pixel-ratio: 3) {
+			      height: 1.5px;
+			    }
+    			background-color: #000000;
+    		}
+    	}
+	}
+}
+.adTypeKindContainer {
+	display: flex;
+	justify-content: space-between;
+	button {
+		width: 96px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #959595;
+        border-radius: 100px;
+        border: solid 1px #c0c0c0;
+        background-color: #fff;
+        @media (-webkit-min-device-pixel-ratio: 3) {
+	      border: solid 1.5px #c0c0c0;
+	    }
+	}
+	button.cooperateSelected {
+		height: 32px;
+	    line-height: 32px;
+		color: #ffffff;
+		border: none;
+		background-image: linear-gradient(to right, #ff8e6c, #ff4848);
+	    box-shadow: 0 4px 8px 0 rgba(255, 82, 77, 0.3);
+	}
+}
+.fieldContainer {
+	background-color: #ffffff;
+}
+.field {
+	position: relative;
+	width: 95%;
+	margin-left: 5%;
+	border-bottom: 1px solid #e5e5e5;
+	@media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #e5e5e5;
+    }
+	font-size: 17px;
+	height: 3em;
+	line-height: 3em;
+	label {
+		font-size: 17px;
+		color: #353535;
+		width: 25%;
+		display: inline-block;
+	}
+	input {
+		font-size: 17px;
+		color: #353535;
+		width: 75%;
+	}
+	input.validate_error {
+		color: red;
+	} 
+}
+.fieldContainer .field:last-child {
+	border-bottom: none;
+}
+.fieldSuggest {
+	height: 7em;
+	label {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	textarea {
+		position: absolute;
+	    top: 0.8em;
+	    left: 25%;
+	    font-size: 0.45333rem;
+	    height: 6.2em;
+	    width: 75%;
+	}
+}
+.fieldMask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+.fieldMask.under {
+	z-index: 4;
+}
+.submitForm {
+	width: 335px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: #4083fd;
+    margin: 20px auto;
+    display: block;
+}
+.errors {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 17px;
+    width: 0px;
+    height: 3em;
+	line-height: 3em;
+	padding-right: 22px;
+	background: url(../img/form_error@3x.png) 100% no-repeat;
+	background-size: 22px 22px;
+    span {
+    	font-size: 13px;
+    	color: red;
+    	padding-right: 10px;
+    	opacity: 0;
+    }
+}
+.CompanyScaleDialog {
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: pop 0.5s ease-in-out;
+}
+.CompanyScaleDialogCloseBtn {
+	font-size: 20px;
+	height: 3.5em;
+	line-height: 3.5em;
+	width: 100%;
+	position: relative;
+	span {
+		font-size: 17px;
+		color: rgb(149, 149, 149);
+		position: absolute;
+		display: block;
+		width: 5em;
+		text-align: center;
+	}
+	p {
+		font-size: 20px;
+		color: rgb(51, 51, 51);
+		text-align: center;
+	}
+}
+.CompanyScaleContainer {
+	li {
+		font-size: 17px;
+		color: rgb(51, 51, 51);
+		text-align: center;
+		height: 3.5em;
+		line-height: 3.5em;
+		border-top: 1px solid #e5e5e5;
+		@media (-webkit-min-device-pixel-ratio: 3) {
+	      border-top: 1.5px solid #e5e5e5;
+	    }
+	}
+	li.CompanyScaleSeclected {
+		color: #4083FD;
+	}
+}
+.ShareDialog.CompanyDialog {
+	align-items: center;
+	justify-content: center;
+}
+.CompanyDialog {
+	.shareDialogContainer {
+		width: 270px;
+		height: 240px;
+		border-radius: 2px;
+		position: relative;
+	}
+	.CompanyScaleDialogCloseBtn {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 2.5em;
+		line-height: 2.5em;
+		span {
+			color: rgb(9,66,144);
+			width: 100%;
+			border-top: 1px solid #e5e5e5;
+			@media (-webkit-min-device-pixel-ratio: 3) {
+		      border-top: 1.5px solid #e5e5e5;
+		    }
+		}
+	}
+	img {
+		width: 48px;
+  		height: 48px;
+  		margin: 35px auto 10px;
+    	display: block;
+	}
+	h1 {
+		font-size: 16px;
+	  	text-align: center;
+	  	color: #4083fd;
+	}
+	p {
+  		font-size: 14px;
+  		text-align: center;
+  		color: #000000;
+  		margin: 20px auto 0;
+  		width: 70%;
+	}
+}

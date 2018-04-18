@@ -1,0 +1,113 @@
+.liveListNormal {
+  padding: 15px 10px 0;
+}
+.liveListNormal li {
+  display: flex;
+}
+.liveTimePoint {
+  border-right: 2px solid #2e4480;
+  padding: 12px 0;
+  width: 10.5%;
+  position: relative;
+}
+.liveTimePoint::after {
+  content: '';
+  width: 8px!important;
+  height: 8px!important;
+  border-top-left-radius: 888px;
+  border-top-right-radius: 888px;
+  border-bottom-right-radius: 888px;
+  border-bottom-left-radius: 888px;
+  background-clip: padding-box;
+  border-radius: 888px;
+  background-color: rgba(47, 69, 129, 0.64);
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: -5px;
+}
+.liveTimePoint::before {
+  content: '';
+  width: 4px!important;
+  height: 4px!important;
+  border-top-left-radius: 888px;
+  border-top-right-radius: 888px;
+  border-bottom-right-radius: 888px;
+  border-bottom-left-radius: 888px;
+  background-clip: padding-box;
+  border-radius: 888px;
+  background-color: #2f4581;
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: -3px;
+}
+.liveTimePoint time {
+  font-size: 11px;
+  font-weight: 400;
+  color: #2e4480;
+  position: relative;
+}
+.liveContentAll {
+  border-bottom: 1px solid #e5e5e5;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #e5e5e5;
+  }
+  padding: 10px 0;
+  width: 89.5%;
+  margin-left: 20px;
+}
+.liveContentAll p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5em;
+  max-height: 4.5em;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.liveContentAll span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #959595;
+  position: relative;
+  width: 15%;
+}
+.liveContentAll span::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1px solid #959595;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border: solid 1.5px #959595;
+    border-top: 0;
+    border-right: 0;
+  }
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 2px;
+  left: 34px;
+}
+.liveListNormal li:nth-child(1) .liveTimePoint, .liveListNormal li:nth-child(1) .liveContentAll {
+  padding: 0 0 10px;
+}
+.liveListNormal li:nth-child(1) .liveTimePoint::after {
+  top: 0px;
+}
+.liveListNormal li:nth-child(1) .liveTimePoint::before {
+  top: 2px;
+  right: -3px;
+}
+.liveShow {
+  display: flex;
+  justify-content: flex-end;
+}
+.contentShowAll p {
+  max-height: inherit!important;
+}
+.contentShowAll span::before {
+  transform: rotate(135deg);
+  top: 7px;
+}

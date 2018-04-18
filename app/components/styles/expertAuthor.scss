@@ -1,0 +1,170 @@
+.ExpertAuthor figure {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 12px;
+  height: 150px;
+}
+.ExpertAuthor figure figcaption {
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+.ExpertAuthor figure h4 {
+  font-size: 14px;
+  color: #fc870a;
+  font-weight: 400;
+  padding-left: 10px;
+  position: relative;
+}
+.expertAvatarArea {
+  background: url('../img/expertAuthorBg@3x.png');
+  background-size: cover;
+}
+.expertAvatarContainer {
+  max-width: 80%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 5%;
+}
+.expertAvatarLarger {
+  position: relative;
+  width: 88px;
+  height: 88px;
+}
+.expertAvatarLarger::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url('../img/v@3x.png') no-repeat;
+  background-size: 22px 22px;
+}
+.expertAvatarInner {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+.expertAvatarInner img {
+  background: url('../img/expert_define_lg@3x.png') 50% 50% no-repeat;
+  background-size: 42.9px 41.2px;
+  background-color: #2e4480;
+  width: 81px;
+  height: 81px;
+  border-radius: 100px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 3px #ffffff;
+  display: block;
+  position: relative;
+}
+.expertAvatarInner.expertAvatarExist img {
+  background-color: #ffffff;
+}
+.expertSkillsContainer {
+  position: relative;
+}
+.expertSummary {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 10px 10px;
+}
+.expertSkillsList {
+  position: absolute;
+  left: 10px;
+  bottom: -25px;
+  display: flex;
+  li {
+    width: 30px;
+    height: 16px;
+    border-radius: 1px;
+    border: solid 1px #2e447f;
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      border-radius: 2px;
+      border: solid 2px #2e447f;
+    }
+    color: #2e447f;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+    margin-right: 5px;
+  }    
+}
+.expertSkills {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+.expertSubject {
+  padding: 15px 10px 10px;
+  background-color: #FFFFFF;
+  margin-top: 15px;
+}
+.expertSubject h4 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #959595;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
+.expertDescContainer {
+  font-size: 12px;
+  max-height: 4.5em;
+  overflow: hidden;
+}
+.expertSubject p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #000000;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+.expertToggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  width: 100%;
+  height: 1em;
+  margin-top: 5px;
+  .icon-fanhuijiantou {
+    font-size: 14px;
+    color: #959595;
+    transform: rotate(-90deg);
+  }
+}
+.expertDescToggle {
+  .expertDescContainer {
+    max-height: initial;
+  }
+  .icon-fanhuijiantou {
+    transform: rotate(90deg);
+  }
+}
+.expertToggleHide {
+  display: none;
+}
+.expertComponent {
+  .navigationBar {
+    border-bottom: 1px solid #f0f0f0!important;
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      border-bottom: 1.5px solid #f0f0f0!important;
+    }
+  }
+}
+.expertNavigartion {
+  .navigationBar {
+    border-bottom: 0!important;
+    background-color: rgba(255,255,255,0);
+    .iconfont.historyBackIcon, .iconfont.menuIcon, .logo h4 {
+      color: #ffffff;
+    }
+  }
+}

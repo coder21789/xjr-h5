@@ -1,0 +1,60 @@
+.newsUserComment {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding-top: 25px;
+}
+.newsUserComment img {
+  width: 18px;
+  height: 14.5px;
+  margin-right: 6px;
+}
+.newsUserComment h4 {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  color: #2d437e;
+}
+.userCommentId figcaption {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.userCommentId time {
+  font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.3px;
+  color: #959595;
+}
+.CommentList {
+  margin: 0 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-bottom: solid 1.5px #f0f0f0;
+  }
+}
+.CommentList figure {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.CommentList img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.CommentList p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  color: #000000;
+  margin-left: 40px;
+}

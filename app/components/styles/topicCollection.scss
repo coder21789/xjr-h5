@@ -1,0 +1,48 @@
+.TopicCollection {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.TopicCollection figure {
+  position: relative;
+  height: 220px;
+}
+.collectionSubject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.collectionSubject figcaption {
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 80vw;
+  /*border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    border-top: 1.5px solid #FFFFFF;
+    border-bottom: 1.5px solid #FFFFFF;
+  }*/
+  padding: 10px 0;
+  span {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+}
+.TopicCollection figure img {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background: url('../img/networkError.png') 50% 50% no-repeat;
+  background-size: 140px 70px;
+  background-color: #e5e5e5;
+}
